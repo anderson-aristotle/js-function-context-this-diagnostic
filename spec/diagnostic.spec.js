@@ -4,7 +4,6 @@ const chai = require('chai')
 const _ = require('lodash')
 
 const expect = chai.expect
-
 const diagnostic = require('../lib/diagnostic')
 
 describe('answer1', function () {
@@ -14,8 +13,13 @@ describe('answer1', function () {
 })
 
 describe('answer2', () => {
-  it('returns the correct value', () => {
-    expect(diagnostic.answer2).to.eql('Ben Adamski')
+  const me = {
+    firstName: 'Caleb',
+    lastName: 'Pearce'
+  }
+  
+  it('returns a string combining the correct properties', () => {
+    expect(diagnostic.person.fullName.call(me)).to.eql('Caleb Pearce')
   })
 })
 
