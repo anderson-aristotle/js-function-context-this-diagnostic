@@ -1,7 +1,6 @@
 'use strict'
 
 const chai = require('chai')
-const _ = require('lodash')
 
 const expect = chai.expect
 const diagnostic = require('../lib/diagnostic')
@@ -17,7 +16,7 @@ describe('answer2', () => {
     firstName: 'Caleb',
     lastName: 'Pearce'
   }
-  
+
   it('returns a string combining the correct properties', () => {
     expect(diagnostic.person.fullName.call(me)).to.eql('Caleb Pearce')
   })
