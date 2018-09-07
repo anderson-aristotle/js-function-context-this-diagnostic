@@ -3,7 +3,7 @@
 # JavaScript Scope and Context Diagnostic
 
 The purpose of this diagnostic is to determine whether you can identify the
-value of `this` when invoked in differenct contexts.
+value of `this` when invoked in different contexts.
 
 ## Prerequisites
 
